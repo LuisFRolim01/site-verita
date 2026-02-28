@@ -1,0 +1,272 @@
+/* ================= BASE ================= */
+
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:#F0EFEB;
+color:#333;
+padding-top:220px;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#FFFFFF;
+box-shadow:0 2px 20px rgba(0,0,0,.05);
+z-index:1000;
+}
+
+.nav-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:30px 0;
+}
+
+/* ================= LOGO ================= */
+
+.logo{
+height:150px;
+width:auto;
+display:block;
+object-fit:contain;
+margin-top:-10px;
+margin-bottom:-10px;
+}
+
+/* ================= MENU ================= */
+
+.menu a{
+text-decoration:none;
+color:#A17550;
+font-weight:500;
+margin-left:30px;
+letter-spacing:.5px;
+font-size:0.95rem;
+transition:.3s;
+}
+
+.menu a:hover{
+opacity:.7;
+}
+
+/* ================= HERO COM IMAGEM HTML ================= */
+
+.hero{
+position:relative;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+overflow:hidden;
+}
+
+/* IMAGEM DE FUNDO */
+
+.hero-bg{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:0;
+}
+
+/* OVERLAY INSTITUCIONAL */
+
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.45)
+);
+z-index:1;
+}
+
+/* CÍRCULO CONCEITUAL */
+
+.hero::after{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+border:1px solid rgba(255,255,255,.15);
+border-radius:50%;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:1;
+}
+
+/* TEXTO HERO */
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:900px;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:3.2rem;
+font-weight:400;
+margin-bottom:25px;
+letter-spacing:.5px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:35px;
+opacity:.95;
+}
+
+/* ================= BOTÃO ================= */
+
+.btn-custom{
+background:#A17550;
+color:white;
+border:none;
+padding:16px 36px;
+border-radius:8px;
+font-weight:500;
+text-decoration:none;
+display:inline-block;
+transition:.3s;
+}
+
+.btn-custom:hover{
+background:#D9C2A3;
+color:#333;
+transform:translateY(-2px);
+}
+
+/* ================= SEÇÕES ================= */
+
+.section{
+padding:120px 0;
+}
+
+.section:nth-child(even){
+background:#F7F3EE;
+}
+
+.text-center{
+text-align:center;
+}
+
+/* ================= HISTÓRIA ================= */
+
+.historia-texto{
+max-width:900px;
+margin:30px auto 0;
+font-size:1.15rem;
+line-height:2;
+color:#555;
+}
+
+/* ================= REDES ================= */
+
+.redes{
+background:#FFFFFF;
+}
+
+.redes-texto{
+max-width:700px;
+margin:20px auto 40px;
+color:#666;
+line-height:1.8;
+}
+
+.redes-icons{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.rede{
+text-decoration:none;
+padding:14px 28px;
+border-radius:40px;
+font-weight:500;
+letter-spacing:.5px;
+transition:.3s;
+border:1px solid #D9C2A3;
+color:#A17550;
+background:transparent;
+}
+
+.rede:hover{
+background:#A17550;
+color:white;
+transform:translateY(-2px);
+}
+
+/* ================= CONTATO CENTRALIZADO ================= */
+
+.contato-centralizado{
+max-width:600px;
+margin:auto;
+text-align:center;
+}
+
+.contato-centralizado h2{
+margin-bottom:30px;
+}
+
+.form{
+width:100%;
+}
+
+.form input,
+.form textarea{
+width:100%;
+padding:16px;
+margin-bottom:18px;
+border:1px solid #DDD;
+border-radius:8px;
+font-family:'Montserrat',sans-serif;
+font-size:0.95rem;
+box-sizing:border-box;
+outline:none;
+transition:.2s;
+}
+
+.form input:focus,
+.form textarea:focus{
+border-color:#A17550;
+box-shadow:0 0 0 2px rgba(161,117,80,.1);
+}
+
+.form .btn-custom{
+width:100%;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+background:#A17550;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+}
