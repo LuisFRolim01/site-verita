@@ -1,158 +1,129 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
-
-<link rel="icon" type="image/x-icon" href="assets/favicon-verita-grande.ico">
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="description" content="Clínica Veritá Odontologia Integrada. Estética, tecnologia e cuidado completo com seu sorriso.">
 <title>Veritá Odontologia Integrada</title>
 
-<!-- Google Fonts -->
-
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- CSS -->
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-
 <header class="header">
+  <div class="container nav-container">
+    <img src="assets/logo_clinica.png" class="logo" alt="Logo Clínica Veritá">
 
-<div class="container nav-container">
-
-<a href="#" class="logo-link">
-<img src="assets/logo_clinica.png" alt="Logo Veritá" class="logo">
-</a>
-
-<nav class="menu">
-<a href="#sobre">História</a>
-<a href="#redes">Redes</a>
-<a href="#contato">Contato</a>
-</nav>
-
-</div>
-
+    <nav class="menu">
+      <a href="#sobre">História</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#contato">Contato</a>
+      <a href="#redes">Redes</a>
+    </nav>
+  </div>
 </header>
 
-<!-- ================= HERO COM FOTO ================= -->
+<main>
 
+<!-- HERO -->
 <section class="hero">
+  <div class="hero-overlay"></div>
 
-<!-- IMAGEM DE FUNDO -->
+  <div class="hero-content">
+    <h1>Excelência em Odontologia Integrada</h1>
+    <p>Estética, tecnologia e cuidado completo com seu sorriso.</p>
 
-<img
-src="assets/hero-verita-cartao.png"
-alt="Cartão Veritá"
-class="hero-bg">
-
-
-<!-- OVERLAY -->
-
-<div class="hero-overlay"></div>
-
-<!-- TEXTO -->
-
-<div class="container hero-content">
-
-<h1>Excelência em Odontologia Integrada</h1>
-
-<p>
-Estética e cuidado completo com seu sorriso.
-</p>
-
-<a href="#contato" class="btn-custom">
-Agendar Consulta
-</a>
-
-</div>
-
+    <div class="hero-btn">
+      <a href="#contato" class="btn-custom">Agendar consulta</a>
+    </div>
+  </div>
 </section>
 
-<!-- ================= HISTÓRIA ================= -->
-
-<section id="sobre" class="section">
-
-<div class="container text-center">
-
-<h2>História da Clínica Veritá</h2>
-
-<p class="historia-texto">
-A Clínica Veritá nasceu com o propósito de transformar a experiência
-odontológica em algo mais humano, tecnológico e acolhedor.
-
-Desde sua fundação, a Veritá se posiciona como referência em
-odontologia integrada, reunindo especialidades, inovação e
-atendimento personalizado em um único espaço.
-
-Com estrutura moderna e profissionais altamente qualificados,
-a clínica busca não apenas tratar sorrisos, mas elevar a
-autoestima e a qualidade de vida de cada paciente atendido.
-
-</p>
-
-</div>
-
+<!-- SOBRE -->
+<section id="sobre" class="section reveal">
+  <div class="container text-center">
+    <h2>História da Clínica Veritá</h2>
+    <p>
+      A Clínica Veritá nasceu com o propósito de transformar a experiência
+      odontológica em algo mais humano, tecnológico e acolhedor.
+    </p>
+  </div>
 </section>
 
-<!-- ================= REDES SOCIAIS ================= -->
+<!-- CLIENTES -->
+<section id="clientes" class="section clientes reveal">
+  <div class="container text-center">
 
-<section id="redes" class="section redes">
+    <h2>Clientes</h2>
 
-<div class="container text-center">
+    <p class="clientes-subtitulo">
+      Veja o que nossos clientes estão comentando
+    </p>
 
-<h2>Conecte-se com a Veritá</h2>
+    <div class="carousel">
 
-<p class="redes-texto">
-Acompanhe conteúdos sobre saúde, estética e bem-estar,
-novidades da clínica e bastidores do cuidado integrado.
-</p>
+      <div class="carousel-item active">
+        <div class="stars">★★★★★</div>
+        <p>Atendimento impecável e ambiente extremamente acolhedor.</p>
+        <h4>Saulo Munhoz</h4>
+      </div>
 
-<div class="redes-icons">
+      <div class="carousel-item">
+        <div class="stars">★★★★★</div>
+        <p>Profissionais altamente qualificados. Meu sorriso mudou completamente.</p>
+        <h4>Ana Raquel Dias</h4>
+      </div>
 
-<a href="#" target="_blank" class="rede">Instagram</a> <a href="#" target="_blank" class="rede">E-mail</a> <a href="#" target="_blank" class="rede">WhatsApp</a>
+      <div class="carousel-item">
+        <div class="stars">★★★★★</div>
+        <p>Tecnologia moderna e atendimento humanizado.</p>
+        <h4>Luis Rolim</h4>
+      </div>
 
-</div>
+      <!-- DOTS DINÂMICOS -->
+      <div class="carousel-dots"></div>
 
-</div>
+    </div>
 
+  </div>
 </section>
 
-<!-- ================= CONTATO CENTRALIZADO ================= -->
+<!-- CONTATO -->
+<section id="contato" class="section contato reveal">
+  <div class="container text-center">
+    <h2>Contato</h2>
 
-<section id="contato" class="section">
+    <p>
+      Rua Exemplo, 123 – Centro<br>
+      Cruzeiro – MG
+    </p>
 
-<div class="container contato-centralizado">
-
-<h2>Contato</h2>
-
-<form class="form">
-
-<input type="text" placeholder="Nome">
-<input type="email" placeholder="Email">
-<textarea rows="4" placeholder="Mensagem"></textarea>
-
-<button type="submit" class="btn-custom">
-Enviar
-</button>
-
-</form>
-
-</div>
-
+    <a href="https://www.google.com/maps" target="_blank" class="btn-localizacao">
+      Abrir localização
+    </a>
+  </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- REDES SOCIAIS -->
+<section id="redes" class="section redes reveal">
+  <div class="container text-center">
+    <h2>Acompanhe a Veritá</h2>
+
+    <div class="redes-sociais">
+      <a href="#" class="social-btn whatsapp" target="_blank">WhatsApp</a>
+      <a href="#" class="social-btn instagram" target="_blank">Instagram</a>
+      <a href="#" class="social-btn linkedin" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer class="footer">
-© 2026 Veritá Odontologia Integrada
+  © 2026 Veritá Odontologia Integrada
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
