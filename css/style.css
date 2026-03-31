@@ -429,8 +429,6 @@ body {
   position: absolute;
   inset: 0;
   background: url('../assets/foto_historia.jpeg') center / cover no-repeat;
-  opacity: .3;
-  mix-blend-mode: overlay;
 }
 
 .sobre-img-bg::after {
